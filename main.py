@@ -99,5 +99,3 @@ outputFile.write("frequency table for file 2" + "\n")
 outputFile.write(FrequencyTable(Parse(f2)) + "\n")
 
 print("data saved in fileAnalysis.txt")
-
-# def unique(x):

@@ -1,23 +1,6 @@
-import os.path
-
 f1 = str(input("Enter the name of the first input file: "))
-
-# Checks if the input file exists
-if not os.path.isfile(f1):
-    print("Please input a valid file name")
-    exit()
-
 f2 = str(input("Enter the name of the second input file: "))
-
-if not os.path.isfile(f2):
-    print("Please input a valid file name")
-    exit()
-
-# Checks if the output file already existed prior to the code being ran
-if not os.path.isfile("fileAnalysis.txt"):
-    outputFile = open("fileAnalysis.txt", "x")
-else:
-    outputFile = open("fileAnalysis.txt", "w")
+outputFile = open("fileAnalysis.txt", "w")
 
 
 #  * Functions to interpret files  *   #

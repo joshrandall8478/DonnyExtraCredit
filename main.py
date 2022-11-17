@@ -48,10 +48,10 @@ def RemoveDuplicates(x):
 def Unison(x, y):
     z = []
     for item in x:
-        if item not in z:
+        if item not in z:  # if item does not already exist in z, item is appended to array
             z.append(item)
     for item in y:
-        if item not in z:
+        if item not in z:  # if item does not already exist in z prior to scan for array x, item is appended to array
             z.append(item)
     return z
 
@@ -80,15 +80,16 @@ def FrequencyTable(x):
     y = {}
     for item in x:
         count = 1
-        if item in y:
+        if item in y:  # if item already existed in the frequency table, continue with the next item in loop
             continue
-        for item2 in x:
-            if item == item2:
-                y[item] = count
-                count = count + 1
-    title = str("{:<20} {:<15}".format('Word', 'Count') + "\n")
+        for item2 in x: # for each item in the array passed in function
+            if item == item2:  # if item matches item 2,
+                y[item] = count  # add that item into the array with the initial count 1 (if passed first time)
+                count = count + 1  # add to subsequent counts of that word
+    title = str("{:<20} {:<15}".format('Word', 'Count') + "\n")  # {:<(integer)} are padding formatting codes. "<"
+    #  signifies to pad right
     table = ""
-    for word, value in y.items():
+    for word, value in y.items():  # word = key, value = count of word/value of key-value pair
         table = table + str("{:<20} {:<15}".format(word, value) + "\n")
 
     return title + table
@@ -118,7 +119,7 @@ outputFile.write(
 outputFile.write("words in file 1 but not in file 2: " + ArrayToString(Exclusive(uniqueF1, uniqueF2)) + "\n")
 outputFile.write("words in file 2 but not in file 1: " + ArrayToString(Exclusive(uniqueF2, uniqueF1)) + "\n")
 outputFile.write("words in file 1 but not in file 2 and words in file 2 but not in file 1: " + (
-            ArrayToString(Exclusive(uniqueF1, uniqueF2)) + ArrayToString(Exclusive(uniqueF2, uniqueF1))) + "\n")
+        ArrayToString(Exclusive(uniqueF1, uniqueF2)) + ArrayToString(Exclusive(uniqueF2, uniqueF1))) + "\n")
 outputFile.write("frequency table for file 1:" + "\n")
 outputFile.write(FrequencyTable(Parse(f1)) + "\n")
 outputFile.write("frequency table for file 2:" + "\n")

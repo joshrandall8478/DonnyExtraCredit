@@ -5,7 +5,7 @@ Intersection of the words in file 1 and file 2: one two three four five six nine
 words in file 1 but not in file 2: seven eight 
 words in file 2 but not in file 1: anotherseven anothereight 
 words in file 1 but not in file 2 and words in file 2 but not in file 1: seven eight anotherseven anothereight 
-frequency table for file 1
+frequency table for file 1:
 Word                 Count          
 one                  2              
 two                  1              
@@ -20,7 +20,7 @@ ten                  1
 eleven               1              
 twelve               1              
 
-frequency table for file 2
+frequency table for file 2:
 Word                 Count          
 one                  1              
 two                  1              

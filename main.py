@@ -93,9 +93,9 @@ outputFile.write("Intersection of the words in file 1 and file 2: " + ArrayToStr
 outputFile.write("words in file 1 but not in file 2: " + ArrayToString(Exclusive(uniqueF1, uniqueF2)) + "\n")
 outputFile.write("words in file 2 but not in file 1: " + ArrayToString(Exclusive(uniqueF2, uniqueF1)) + "\n")
 outputFile.write("words in file 1 but not in file 2 and words in file 2 but not in file 1: " + (ArrayToString(Exclusive(uniqueF1, uniqueF2)) + ArrayToString(Exclusive(uniqueF2, uniqueF1))) + "\n")
-outputFile.write("frequency table for file 1" + "\n")
+outputFile.write("frequency table for file 1:" + "\n")
 outputFile.write(FrequencyTable(Parse(f1)) + "\n")
-outputFile.write("frequency table for file 2" + "\n")
+outputFile.write("frequency table for file 2:" + "\n")
 outputFile.write(FrequencyTable(Parse(f2)) + "\n")
 
 print("data saved in fileAnalysis.txt")

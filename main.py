@@ -13,9 +13,6 @@ def Parse(x):
         for line in data_file:
             data = data + line.split()
         return data
-        #for space in line_data:
-        #    data = space.split()
-         #   return data
 
 
 # RemoveDuplicates creates a new array, and only adds items that have not been added before to that array

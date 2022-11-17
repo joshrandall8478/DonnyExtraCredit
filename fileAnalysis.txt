@@ -1,29 +1,37 @@
-Unique words in file 1: the gay brown fox jumps over lazy dog 
-Unique words in file 2: the straight green fox jumps over penguin dog 
-Unison of the words in file 1 and file 2: the gay brown fox jumps over lazy dog straight green penguin 
-Intersection of the words in file 1 and file 2: the fox jumps over dog 
-words in file 1 but not in file 2: gay brown lazy 
-words in file 2 but not in file 1: straight green penguin 
-words in file 1 but not in file 2 and words in file 2 but not in file 1: gay brown lazy straight green penguin 
+Unique words in file 1: one two three four five six seven eight nine ten eleven twelve 
+Unique words in file 2: one two three four five six anotherseven anothereight nine ten eleven twelve 
+Unison of the words in file 1 and file 2: one two three four five six seven eight nine ten eleven twelve anotherseven anothereight 
+Intersection of the words in file 1 and file 2: one two three four five six nine ten eleven twelve 
+words in file 1 but not in file 2: seven eight 
+words in file 2 but not in file 1: anotherseven anothereight 
+words in file 1 but not in file 2 and words in file 2 but not in file 1: seven eight anotherseven anothereight 
 frequency table for file 1:
 Word                 Count          
-the                  2              
-gay                  1              
-brown                1              
-fox                  1              
-jumps                1              
-over                 1              
-lazy                 1              
-dog                  1              
+one                  2              
+two                  2              
+three                2              
+four                 1              
+five                 1              
+six                  1              
+seven                1              
+eight                1              
+nine                 1              
+ten                  1              
+eleven               1              
+twelve               1              
 
 frequency table for file 2:
 Word                 Count          
-the                  2              
-straight             1              
-green                1              
-fox                  1              
-jumps                1              
-over                 1              
-penguin              1              
-dog                  1              
+one                  1              
+two                  1              
+three                1              
+four                 1              
+five                 1              
+six                  1              
+anotherseven         1              
+anothereight         1              
+nine                 1              
+ten                  2              
+eleven               2              
+twelve               2              
 

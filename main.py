@@ -4,14 +4,18 @@ outputFile = open("fileAnalysis.txt", "w")
 
 
 #  * Functions to interpret files  *   #
-# Parse separates the words entered by space, and returns the data split by space
+# Parse separates the words entered by new line, and returns the data split by space
 
 
 def Parse(x):
     with open(x) as data_file:
-        for space in data_file:
-            data = space.split()
-            return data
+        data = []
+        for line in data_file:
+            data = data + line.split()
+        return data
+        #for space in line_data:
+        #    data = space.split()
+         #   return data
 
 
 # RemoveDuplicates creates a new array, and only adds items that have not been added before to that array
